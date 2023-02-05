@@ -5,11 +5,9 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import About from '../About/About';
-import Education from '../Education/Education';
 import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
 import Skills from '../Skills/Skills';
-import Languages from '../Languages.js/Languages';
 import Courses from '../Courses/Courses';
 import { Avatar, Grid } from '@mui/material';
 
@@ -55,55 +53,57 @@ export default function VerticalTabs() {
 
     return (
         <Box
-            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}
+            sx={{ 
+                flexGrow: 1, 
+                // bgcolor: 'background.paper',
+                 display: 'flex',
+                 bgcolor:"none"
+                 }}
 
         >
             <Grid conteiner display="flex" >
-                <Grid item sx={{ width: 300 }}>
+                <Grid item sx={{height:1200, width: 300,ml:-5,mr:5,bgcolor:"none"}}>
+                    <Avatar
+                        alt="Remy Sharp"
+                        src={process.env.PUBLIC_URL + '/Canva@.PNG'}
+                        sx={{ width: 200, height: 200, ml: 13, mt: 3, border: 4 }}
+                        label="About" {...a11yProps(1)}
+                    />
                     <Tabs
                         orientation="vertical"
                         variant="scrollable"
                         value={value}
                         onChange={handleChange}
                         aria-label="Vertical tabs example"
-                        sx={{ borderRight: 1, borderColor: 'divider' }}
+                        sx={{ borderRight: 1, borderColor: 'divider', bgcolor: "none" }}
+
                     >
-                        <Avatar
-                            alt="Remy Sharp"
-                            src={process.env.PUBLIC_URL + '/Canva@.PNG'}
-                            sx={{ width: 200, height: 200, ml: 11, mt: 3, border: 4 }}
-                            label="About" {...a11yProps(0)}
-                        />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="About" {...a11yProps(1)} />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="Education" {...a11yProps(2)} />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="EXPERIENCE" {...a11yProps(3)} />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="SKILLS" {...a11yProps(4)} />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="LANGUAGES" {...a11yProps(5)} />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="Projects" {...a11yProps(6)} />
-                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "1000px" }} label="COURSES" {...a11yProps(7)} />
+                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "500px" }} label="About" {...a11yProps(0)} />
+                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "500px" }} label="EXPERIENCE" {...a11yProps(1)} />
+                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "500px" }} label="SKILLS" {...a11yProps(2)} />
+                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "500px" }} label="Projects" {...a11yProps(3)} />
+                        <Tab sx={{ m: 1, fontSize: 20, fontWeight: "bold", width: "500px" }} label="COURSES" {...a11yProps(4)} />
                     </Tabs>
                 </Grid>
 
-                <Grid item sx={{ width: 1000 }}>
-                    <TabPanel value={value} index={1}>
+                <Grid item sx={{
+                    width: 1000,
+                    //  backgroundImage: `url(${"https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80"})` 
+                }}
+                >
+                    <TabPanel value={value} index={0}>
                         <About />
                     </TabPanel>
-                    <TabPanel value={value} index={2}>
-                        <Education />
-                    </TabPanel>
-                    <TabPanel value={value} index={3}>
+                    <TabPanel value={value} index={1}>
                         <Experience />
                     </TabPanel>
-                    <TabPanel value={value} index={4}>
+                    <TabPanel value={value} index={2}>
                         <Skills />
                     </TabPanel>
-                    <TabPanel value={value} index={5}>
-                        <Languages />
-                    </TabPanel>
-                    <TabPanel value={value} index={6}>
+                    <TabPanel value={value} index={3}>
                         <Projects />
                     </TabPanel>
-                    <TabPanel value={value} index={7}>
+                    <TabPanel value={value} index={4}>
                         <Courses />
                     </TabPanel>
                 </Grid>

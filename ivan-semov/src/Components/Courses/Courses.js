@@ -8,7 +8,7 @@ const Courses = () => {
         <>
             <Box display="flex" sx={{ m: 3, mt: 7 }}>
                 <Typography sx={{ fontSize: 40, color: "gray" }}>
-                    <CardGiftcardIcon sx={{ fontSize: 40, color: "black", mr: 2, mb: -0.4 }} />
+                    <CardGiftcardIcon sx={{ fontSize: 40, color: "white", mr: 2, mb: -0.4 }} />
                     C# Fundamentals - January 2020
                 </Typography>
 
@@ -20,14 +20,14 @@ const Courses = () => {
                     target="_blank"
                     sx={{ ml: 3, borderRadius: 30 }}
                 >
-                    <CardMembershipIcon sx={{ mr: 1 }} />
+                    <CardMembershipIcon sx={{ mr: 1, }} />
                     Certificate
                 </Button>
             </Box>
 
             <Box display="flex" sx={{ m: 3, mt: 7 }}>
                 <Typography sx={{ fontSize: 40, color: "gray" }}>
-                    <CardGiftcardIcon sx={{ fontSize: 40, color: "black", mr: 2, mb: -0.4 }} />
+                    <CardGiftcardIcon sx={{ fontSize: 40, color: "white", mr: 2, mb: -0.4 }} />
                     JS Advanced - September 2021
                 </Typography>
 
@@ -46,7 +46,7 @@ const Courses = () => {
 
             <Box display="flex" sx={{ m: 3, mt: 7 }}>
                 <Typography sx={{ fontSize: 40, color: "gray" }}>
-                    <CardGiftcardIcon sx={{ fontSize: 40, color: "black", mr: 2, mb: -0.4 }} />
+                    <CardGiftcardIcon sx={{ fontSize: 40, color: "white", mr: 2, mb: -0.4 }} />
                     JS Applications - February 2022
                 </Typography>
 
@@ -65,7 +65,7 @@ const Courses = () => {
 
             <Box display="flex" sx={{ m: 3, mt: 7 }}>
                 <Typography sx={{ fontSize: 40, color: "gray" }}>
-                    <CardGiftcardIcon sx={{ fontSize: 40, color: "black", mr: 2, mb: -0.4 }} />
+                    <CardGiftcardIcon sx={{ fontSize: 40, color: "white", mr: 2, mb: -0.4 }} />
                     HTML & CSS - May 2022
                 </Typography>
 
@@ -84,7 +84,7 @@ const Courses = () => {
 
             <Box display="flex" sx={{ m: 3, mt: 7 }}>
                 <Typography sx={{ fontSize: 40, color: "gray" }}>
-                    <CardGiftcardIcon sx={{ fontSize: 40, color: "black", mr: 2, mb: -0.4 }} />
+                    <CardGiftcardIcon sx={{ fontSize: 40, color: "white", mr: 2, mb: -0.4 }} />
                     React JS - June 2020
                 </Typography>
 
