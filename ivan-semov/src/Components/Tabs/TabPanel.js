@@ -56,8 +56,9 @@ export default function VerticalTabs() {
     return (
         <Box
             sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}
+
         >
-            <Grid conteiner display="flex">
+            <Grid conteiner display="flex" >
                 <Grid item sx={{ width: 300 }}>
                     <Tabs
                         orientation="vertical"
@@ -83,7 +84,7 @@ export default function VerticalTabs() {
                     </Tabs>
                 </Grid>
 
-                <Grid item sx={{ width: 500 }}>
+                <Grid item sx={{ width: 1000 }}>
                     <TabPanel value={value} index={1}>
                         <About />
                     </TabPanel>
